@@ -1,0 +1,17 @@
+/* Custom scrollbar styles */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px; /* Smaller scrollbar width */
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #ccc; /* Light gray thumb */
+    border-radius: 3px; /* Rounded corners for thumb */
+    border: 2px solid transparent; /* Transparent border around thumb */
+    background-clip: content-box; /* Makes the thumb responsive */
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Light background for the track */
+    border-radius: 3px; /* Rounded corners for track */
+  }
+  
