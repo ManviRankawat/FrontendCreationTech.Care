@@ -1,11 +1,11 @@
 # Frontend Coalition Technologies Test:
 🔍 Key Features
-✅ Blood Pressure Monitoring – Displays real-time blood pressure values in a dedicated info box.
+✅ Blood Pressure Monitoring – Displays real-time blood pressure values in a dedicated info box. 
 ✅ Diagnosis History Section – Provides an overview of health vitals, including:
 
 🫁 Respiratory Rate
 🌡️ Temperature
-❤️ Heart Rate
+❤️ Heart Rate 
 ✅ Custom UI Components – Designed with clean, modern styling and intuitive positioning.
 ✅ Optimized for Accessibility & UX – Uses well-structured components and responsive design principles.
 💻 Tech Stack
