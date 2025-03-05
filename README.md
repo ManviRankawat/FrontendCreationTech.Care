@@ -1,5 +1,6 @@
 # Frontend Coalition Technologies Test:
 🔍 Key Features
+
 ✅ Blood Pressure Monitoring – Displays real-time blood pressure values in a dedicated info box. 
 
 ✅ Diagnosis History Section – Provides an overview of health vitals, including:
