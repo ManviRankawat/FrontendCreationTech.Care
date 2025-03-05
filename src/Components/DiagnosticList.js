@@ -33,11 +33,6 @@ const DiagnosticList = ({ patient }) => {
           </tbody>
         </table>
       </div>
-
-      {/* Custom Scrollbar */}
-      <div className="absolute top-[978px] left-[1157px] w-[6px] h-[178px] bg-[#E3E4E6] rounded-[3px]">
-        <div className="absolute top-0 left-0 w-[6px] h-[100px] bg-black rounded-[3px]"></div>
-      </div>
     </div>
   );
 };
