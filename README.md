@@ -10,8 +10,10 @@
 ❤️ Heart Rate 
 
 ✅ Custom UI Components – Designed with clean, modern styling and intuitive positioning.
+
 ✅ Optimized for Accessibility & UX – Uses well-structured components and responsive design principles.
-💻 Tech Stack
+
+## 💻 Tech Stack:
 
 ### Frontend: React.js, Tailwind CSS
 ### State Management: React Hooks
