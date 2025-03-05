@@ -1,16 +1,16 @@
 import React from "react";
 import Doctor from "./Components/Doctor";
-import Logo from "/Users/manvirankawat/Documents/CoalitionTechFrontend/frontend/src/Assets/TestLogo.svg";
-import DoctorWoman from "/Users/manvirankawat/Documents/CoalitionTechFrontend/frontend/src/Assets/SeniorWomanDoc.png";
-import Settings from "/Users/manvirankawat/Documents/CoalitionTechFrontend/frontend/src/Assets/setting.svg";
-import More from "/Users/manvirankawat/Documents/CoalitionTechFrontend/frontend/src/Assets/3dots.png";
+import Logo from "./Assets/TestLogo.svg";
+import DoctorWoman from "./Assets/SeniorWomanDoc.png";
+import Settings from "./Assets/setting.svg";
+import More from "./Assets/3dots.png";
 
 // Import navigation icons
-import OverviewIcon from "/Users/manvirankawat/Documents/CoalitionTechFrontend/frontend/src/Assets/overview.svg";
-import PatientsIcon from "/Users/manvirankawat/Documents/CoalitionTechFrontend/frontend/src/Assets/patients.svg";
-import ScheduleIcon from "/Users/manvirankawat/Documents/CoalitionTechFrontend/frontend/src/Assets/schedule.png";
-import MessageIcon from "/Users/manvirankawat/Documents/CoalitionTechFrontend/frontend/src/Assets/message.svg";
-import TransactionsIcon from "/Users/manvirankawat/Documents/CoalitionTechFrontend/frontend/src/Assets/transactions.svg";
+import OverviewIcon from "./Assets/overview.svg";
+import PatientsIcon from "./Assets/patients.svg";
+import ScheduleIcon from "./Assets/schedule.png";
+import MessageIcon from "./Assets/message.svg";
+import TransactionsIcon from "./Assets/transactions.svg";
 
 const navItems = [
   { name: "Overview", img: OverviewIcon },
