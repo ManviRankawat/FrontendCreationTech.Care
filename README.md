@@ -10,9 +10,9 @@
 ✅ Optimized for Accessibility & UX – Uses well-structured components and responsive design principles.
 💻 Tech Stack
 
-## Frontend: React.js, Tailwind CSS
-## State Management: React Hooks
-## Styling: Custom CSS & Tailwind
+### Frontend: React.js, Tailwind CSS
+### State Management: React Hooks
+### Styling: Custom CSS & Tailwind
 
 
 ## Getting Started with Create React App
