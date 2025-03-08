@@ -24,12 +24,31 @@ const BloodPressureChart = ({ patient }) => {
 
     const ctx = chartRef.current.getContext('2d');
 
-    // Access the diagnosis history and get the last 6 months
+    // Access the diagnosis history and ensure it's an array
     const diagnosisHistory = patient?.diagnosis_history || [];
-    const lastSixMonths = diagnosisHistory.slice(-6); // Get the last 6 months
+
+    // Convert month names to numerical values for sorting
+    const monthNames = [
+      "January", "February", "March", "April", "May", "June",
+      "July", "August", "September", "October", "November", "December"
+    ];
+
+    // Sort by year and month (latest first)
+    const sortedHistory = [...diagnosisHistory].sort((a, b) => {
+      const dateA = new Date(a.year, monthNames.indexOf(a.month));
+      const dateB = new Date(b.year, monthNames.indexOf(b.month));
+      return dateB - dateA; // Sorting in descending order (latest first)
+    });
+
+    // Get the latest 6 months (after sorting)
+    const lastSixMonths = sortedHistory.slice(0, 6).reverse(); // Reverse to maintain chronological order
 
     // Extract the month values and the corresponding blood pressure values
-    const months = lastSixMonths.map(item => item.month); // assuming `month` is in the `diagnosis_history`
+    const months = lastSixMonths.map(item => {
+      const date = new Date(`${item.month} 1, ${item.year}`); // Ensure correct date parsing
+      return date.toLocaleString('default', { month: 'short', year: 'numeric' }); // "Mar 2024"
+    });
+    
     const systolicValues = lastSixMonths.map(item => item.blood_pressure?.systolic?.value || 0);
     const diastolicValues = lastSixMonths.map(item => item.blood_pressure?.diastolic?.value || 0);
 
@@ -91,7 +110,7 @@ const BloodPressureChart = ({ patient }) => {
             {patient?.diagnosis_history[0].blood_pressure?.systolic?.value || '--'}
           </p>
           <img src={ArrowUp} alt="ArrowUp" />
-          <p className="text-xs text-gray-500">{patient?.diagnosis_history[0].systolic?.levels || 'N/A'}</p>
+          <p className="text-xs text-gray-500">{patient?.diagnosis_history[0]?.blood_pressure?.systolic?.levels || 'N/A'}</p>
         </div>
         {/* Diastolic */}
         <div className="w-[149px] h-[84px] p-3">
@@ -100,7 +119,7 @@ const BloodPressureChart = ({ patient }) => {
             {patient?.diagnosis_history[0].blood_pressure?.diastolic?.value || '--'}
           </p>
           <img src={ArrowDown} alt="ArrowDown" />
-          <p className="text-xs text-gray-500">{patient?.diagnosis_history[0].diastolic?.levels || 'N/A'}</p>
+          <p className="text-xs text-gray-500">{patient?.diagnosis_history[0]?.blood_pressure?.diastolic?.levels || 'N/A'}</p>
         </div>
       </div>
     </div>
