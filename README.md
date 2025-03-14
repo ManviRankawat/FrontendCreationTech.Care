@@ -1,14 +1,14 @@
 # Frontend Coalition Technologies Test:
 🔍 Key Features:
 
-✅ Blood Pressure Monitoring – Displays real-time blood pressure values in a dedicated info box. 
+✅ Blood Pressure Monitoring – Displays real-time blood pressure values in a dedicated info box.    
 ✅ Diagnosis History Section – Provides an overview of health vitals, including:
 
 🫁 Respiratory Rate
 🌡️ Temperature
 ❤️ Heart Rate 
 
-✅ Custom UI Components – Designed with clean, modern styling and intuitive positioning.
+✅ Custom UI Components – Designed with clean, modern styling and intuitive positioning.    
 ✅ Optimized for Accessibility & UX – Uses well-structured components and responsive design principles.
 
 
@@ -19,12 +19,15 @@ https://github.com/user-attachments/assets/45da3193-464f-4b54-ad50-3c434f2a863b
 
 ## 💻 Tech Stack:
 
-### Frontend: React.js, Tailwind CSS
-### State Management: React Hooks
-### Styling: Custom CSS & Tailwind
+### Frontend: 
+React.js, Tailwind CSS
+### State Management: 
+React Hooks
+### Styling: 
+Custom CSS & Tailwind
 
 
-### Getting Started with Create React App
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
